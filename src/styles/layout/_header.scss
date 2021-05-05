@@ -1,0 +1,55 @@
+@import "../utilities/all";
+
+.bk-header {
+    background-color: $white;
+    // position: sticky;
+    // top: 0;
+    // z-index: $zindex-100;
+    @extend %dflex;
+}
+.activeanit {
+  box-shadow: 0px 3px 8px 0px rgba(21, 47, 95, 0.12);
+}
+.bk_desktop {
+  padding: 15px 0;
+  @extend %witdh-1200;
+}
+.nav_desktop{
+  @extend %flex-bwt;
+}
+.logo_desktop {
+  color: $color-pri;
+  font-size: 50px;
+  font-weight: 700;
+}
+.desktop_bklinks {
+  @extend %flex-bwt;
+  flex-basis: 45%;
+  a {
+    color: $black-two;
+    font-weight: 500;
+    font-size: 15px;
+    display: block;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: $color-pri;
+      transition: all 0.3s;
+      // opacity: 0;
+      overflow: hidden;
+    }
+    &:hover {
+      color: $color-pri;
+      transition: all 0.3s;
+      &::after {
+        width: 100%;
+        // opacity: 1;
+      }
+    }
+  }
+}

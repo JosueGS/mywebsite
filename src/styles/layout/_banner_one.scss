@@ -1,0 +1,28 @@
+@import "../utilities/all";
+
+.bk_banner_one{
+    @extend %dflex;
+    background-color: $color-pri;
+    background-image: url('http://droitthemes.com/wp/mak/wp-content/uploads/2018/10/hire_bg.png');
+    position: relative;
+    height: 450px;
+}
+
+.content_banner_one{
+    @extend %witdh-1200;
+    @extend %flex-v;
+
+    h3{
+        font-size: 45px;
+        color: $white;
+        margin-bottom: 50px;
+        &::before{
+            background-color: $white;
+        }
+    }
+    a:hover{
+        background-color: $black-three;
+    }
+
+
+}

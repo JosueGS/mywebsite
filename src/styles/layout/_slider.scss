@@ -1,0 +1,37 @@
+@import "../utilities/all";
+
+.bk-portada{
+    height: auto;
+    background: $white-two;
+    @extend %dflex;
+}
+
+.item_portada{
+    @extend %witdh-1200;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 40px;
+}
+
+.portada_img{
+    align-self: baseline;
+}
+.title_slider{
+    font-size:70px ;
+    font-weight: $nw600;
+    color: $black;
+}
+.item_content_slider{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    h4{
+        font-weight: $nw400;
+        line-height: $lhsize1_5;
+        font-size: 23px;
+        color: $gray-three;
+        width: 255px;
+        max-width: 300px;
+    }
+}

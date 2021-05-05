@@ -1,0 +1,36 @@
+@import '../utilities/variables';
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h6,p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+p{
+    line-height: $lhsize1_8;
+}
+
+button{
+    background: transparent;
+    &:focus{
+        border-color: transparent;
+    }
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    line-height: $lhsize1;
+    color: $gray;
+    font-family: $font-pri;
+}

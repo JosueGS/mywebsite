@@ -1,0 +1,27 @@
+@import "../utilities/all";
+
+.bk_about{
+    @extend %dflex;
+    background-color: $white;
+    @extend %padding-wrap;
+}
+.content_about{
+    @extend %witdh-1200;
+    display: grid;
+    grid-template-columns: 38% 60%;
+    align-items: center;
+}
+
+
+.content_btn{
+    display: flex;
+    gap: 20px;
+}
+.item_atwo p{
+    &:nth-child(1){
+        margin-bottom: 20px;
+    }
+    &:nth-child(2){
+        margin-bottom: 23px;
+    }
+}

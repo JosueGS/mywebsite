@@ -1,0 +1,58 @@
+@import './variables';
+
+%dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// .centerv, .centerh, .flex-bwt{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+%flex-v{
+    @extend %dflex;
+    flex-direction: column;
+}
+%flex-bwt{
+    @extend %dflex;
+    justify-content: space-between;
+}
+
+%witdh-1200{
+    width: $mxwidth-desktop;
+    height: 100%;
+}
+
+%padding-wrap{
+    padding: 90px 0;
+}
+
+%title-prim{
+    color: #32333c;
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+%title-prim-before {
+    content: "";
+    position: absolute;
+    bottom: -21px;
+    height: 4px;
+    background-color:$color-pri;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.title__prim {
+    @extend %title-prim;
+
+    &::before{
+        @extend %title-prim-before;
+    }
+}

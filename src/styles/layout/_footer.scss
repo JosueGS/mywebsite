@@ -1,0 +1,48 @@
+@import "../utilities/all";
+
+.bk-footer{
+    @extend %flex-v;
+    @extend %padding-wrap;
+    background-color: $white-two;
+}
+
+.logo_footer{
+    color: $color-pri;
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  .footer_details{
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    line-height: $lhsize1_7;
+    margin-bottom: 35px;
+  }
+  .footer_redsocials{
+    width: 17%;
+    max-width: 330px;
+    margin-bottom: 40px;
+    @extend %flex-bwt;
+    a{
+        @extend %flex-v;
+      background-color: $bg-icon-alter;
+      color: $color-icon-alter;
+      width: 50px;
+      height:50px;
+      border-radius: 50%;
+      &:hover{
+        background-color: $color-pri;
+        color: $white;
+        transition: .3s all ease;
+      }
+    }
+  }
+  .content_copyright{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e1e6f1;
+    p{
+      line-height:$lhsize1_7 ;
+    }
+  }

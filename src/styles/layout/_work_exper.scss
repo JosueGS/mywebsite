@@ -1,0 +1,60 @@
+@import "../utilities/all";
+
+.bk_exper {
+  @extend %dflex;
+  background-color: $white;
+  @extend %padding-wrap;
+}
+
+.content_work_exper {
+  @extend %witdh-1200;
+}
+
+.grid_des_work {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.item_des_work {
+  align-items: flex-start;
+  background-color: $white;
+  border: 0.8px solid $gray-four;
+  padding: 75px 40px;
+  visibility: visible;
+  animation-delay: 0.3s;
+  animation-name: fadeInLeft;
+  h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: $black-three;
+  }
+  p {
+    color: #8a8fa3;
+    font-size: 15px;
+
+    &:nth-child(1) {
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    &:nth-last-child(2) {
+      margin-bottom: 25px;
+    }
+    &:nth-last-child(1) {
+      line-height: $lhsize1_6;
+    }
+  }
+  &:nth-child(2) {
+    border-right: none;
+    border-left: none;
+  }
+  &:hover {
+    background-color: #fec110;
+    p {
+      color: $black-two;
+      &:nth-last-child(2) {
+        color: #8a8fa3;
+      }
+    }
+  }
+}
